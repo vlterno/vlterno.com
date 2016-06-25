@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Vlterno corp.</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Great+Vibes&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,400italic,100italic,500italic,700,700italic,900italic,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+
+</head>
+<body class="first_body">
+
+  <!-- First page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="first_page">
+    <div class="navbar">
+      <div class="nav">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="">Materials</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="">Important</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="">Links</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container" id="logotype">
+      Vlterno
+    </div>
+
+    <div>
+      <div class="six columns" id="header_text2">
+          <h4>This blog is about</h4>
+          <p>Notes about my life, work, study and hobbies.</p>
+      </div>
+      <div class="six columns" id="header_text">
+        <h4>Things I am passionate about</h4>
+        <p>It's about html/css, art, interesting links etc.</p>
+      </div>
+
+      <div class="twelve columns">
+        <div class="button-position">
+          <div class="button-main">next</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--Second page: present content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="second_page">
+    <div class="top-header">
+      <div class="four_clear columns header">
+        <h4>go to top</h4>
+      </div>
+      <div class="four_clear columns header">
+        <h4>Categories</h4>
+      </div>
+      <div class="four_clear columns header">
+        <h4>go to links</h4>
+      </div>
+    </div>
+    <div class="container" id="sp-title">
+      <!-- <h3>Main content</h3> -->
+      <div class="sp-content">
+
+        <div class="sp-col-content">
+          <div class="four columns act-col" onclick="location.href='linux.html'">
+            <img class="img_icon" src="images/linux_logo.png">
+            <h4>Linux</h4>
+            <p>Bash, news, scripts. Ubuntu settings, linux games, customize.</p>
+          </div>
+          <div class="four columns act-col">
+            <img class="img_icon" src="images/windows_os.png">
+            <h4>Windows</h4>
+            <p>Programs, news, windows games, notes.</p>
+          </div>
+          <div class="four columns act-col">
+            <img class="img_icon" src="images/coding.png">
+            <h4>Code</h4>
+            <p>Html, css coding, js, jquery, interesting links, notes about it.</p>
+          </div>
+        </div>
+
+        <div class="sp-col-content">
+          <div class="four columns act-col">
+            <img class="img_icon" src="images/book.png">
+            <h4>Books</h4>
+            <p>All is about books, what's need to read, what's interesting.</p>
+          </div>
+          <div class="four columns act-col">
+            <img class="img_icon" src="images/mechanic.png">
+            <h4>Mechanics</h4>
+            <p>Machines, engineering, studing, new inventions and links about it.</p>
+          </div>
+          <div class="four columns act-col">
+            <img class="img_icon" src="images/dragon_art.png">
+            <h4>Art</h4>
+            <p>All is about beauty in the world, colors, art, gallery.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="twelve columns footer">
+      <p><small>created by Vladimir Ternovykh</small></p>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script type="text/javascript">
+    var scroll_to = function(elem) {
+      $('html, body').animate({ scrollTop: $(elem).offset().top }, 1000);
+    }
+    $(".button-main").click(function(){scroll_to(".second_page");})
+  </script>
+
+</body>
+</html>
