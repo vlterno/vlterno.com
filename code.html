@@ -20,7 +20,7 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-	<div class="linux_page">
+	<div class="contents_page">
 
 		<div class="top-header">
 			<div class="four_clear columns header-content" id="link_back" onclick="location.href='index.html'">
@@ -31,7 +31,7 @@
 					Vlterno
 				</div>
 				<hr>
-				<h4>Linux</h4>
+				<h4>Code</h4>
 			</div>
 			<div class="four_clear columns header-content" id="link_links">
 				<h4>go to links</h4>
@@ -42,31 +42,7 @@
 		<div class="container" id="container-content">
 			<div class="content">
 				<div class="six columns head-content">
-					<h3>Update ubuntu</h3>
-				</div>
-				<div class="six columns content-date">
-					<h5>25 Jun 2016</h5>
-				</div>
-				<div class="twelve columns">
-					<hr>	
-				</div>
-				<div class="twelve columns content-text">
-					<p>You can manually update via terminal by running:</p>
-					<pre><code>sudo apt-get update
-sudo apt-get upgrade</code></pre>
-					<p>Additionally you can run:</p>
-					<pre><code>sudo apt-get dist-upgrade</code></pre>
-					<p>This will clean up any packages that are no longer needed:</p>
-					<pre><code>sudo apt-get clean
-sudo apt-get autoremove</code></pre>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" id="container-content">
-			<div class="content">
-				<div class="six columns head-content">
-					<h3>Установка скорости мыши в Ubuntu</h3>
+					<h3>Css box model</h3>
 				</div>
 				<div class="six columns content-date">
 					<h5>Jun 2016</h5>
@@ -75,12 +51,58 @@ sudo apt-get autoremove</code></pre>
 					<hr>	
 				</div>
 				<div class="content-text">
-					<p>"Razer Razer DeathAdder" - название мыши.</p>
-					<pre><code>xinput --set-prop "Razer Razer DeathAdder" "Device Accel Constant Deceleration" 4</code></pre>
-
+					<img class="u-full-width content-image" src="content/pic_1.png">
+					<li>Content - The content of the box, where text and images appear</li>
+					<li>Padding - Clears an area around the content. The padding is transparent</li>
+					<li>Border - A border that goes around the padding and content</li>
+					<li>Margin - Clears an area outside the border. The margin is transparent</li>
 				</div>
 			</div>
 		</div>
+
+		<div class="container" id="container-content">
+			<div class="content">
+				<div class="six columns head-content">
+					<h3>Skeleton grid css</h3>
+				</div>
+				<div class="six columns content-date">
+					<h5>Jun 2016</h5>
+				</div>
+				<div class="twelve columns">
+					<hr>	
+				</div>
+				<div class="content-text">
+					<img class="u-full-width content-image" src="content/pic_2.png">
+					<p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.</p>
+					<pre><code> @media (min-width: 600px) {
+  .container {width: 80%;}
+  .columns {margin-left: 4%;}
+  .columns:first-child {margin-left: 0;}
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .four_clear.columns             {width: 33.6666666667%;  }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.columns               { width: 30.6666666667%; }
+  .two-thirds.columns              { width: 65.3333333333%; }
+
+  .one-half.columns                { width: 48%; } </code></pre>
+  					<p>Official site: <a class="link-text" href="http://getskeleton.com/">skeleton grid css</a></p>
+				</div>
+			</div>
+		</div>
+
 
 		<div class="twelve columns footer-content">
 			<p><small>created by Vladimir Ternovykh</small></p>
@@ -88,7 +110,5 @@ sudo apt-get autoremove</code></pre>
 		
 
 	</div>
-
-</div>
 </body>
 </html>
