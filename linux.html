@@ -86,7 +86,7 @@ $ sudo apt-get autoremove</code></pre>
 		<div class="container" id="container-content">
 			<div class="content">
 				<div class="six columns head-content">
-					<h3>Install Latest Arc GTK Theme on Ubuntu 16.04 LTS</h3>
+					<h3>Install Latest Arc GTK Theme on Ubuntu 16.04</h3>
 				</div>
 				<div class="six columns content-date">
 					<h5>Jun 2016</h5>
@@ -95,6 +95,20 @@ $ sudo apt-get autoremove</code></pre>
 					<hr>	
 				</div>
 				<div class="twelve columns content-text">
+					<img class="u-full-width content-image" src="content/pic_3.png">
+					<p>Getting the latest version of the Arc GTK theme on Ubuntu 16.04 is simple. You have a number of choices available.</p>
+					<p>You can add the theme designer’s personal repository to get new versions of Arc on Ubuntu 16.04 LTS as and when they’re released. To add the Arc GTK repo run:</p>
+					<pre><code>$ sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"</code></pre>
+					<p>Then, refresh your software sources and install the theme:</p>
+					<pre><code>$ sudo apt-get update
+
+$ sudo apt-get install arc-theme</code></pre>
+					<p>You’ll also need to import the repo’s key to quite any command-line errors:</p>
+					<pre><code>$ wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key
+
+$ sudo apt-key add - < Release.key
+</code></pre>
+
 
 				</div>
 			</div>
